@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <stdio.h>
+#include "math.h"
 
 /**
  * _putchar - wirtes the chharacter  to stdout
