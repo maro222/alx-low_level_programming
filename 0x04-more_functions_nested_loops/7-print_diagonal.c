@@ -21,8 +21,9 @@ void print_diagonal(int n)
 			for (k = 0; k < i; k++)
 			{
 				if (k == i - 1)
-					_putchar('/');
-				_putchar(' ');
+					_putchar(92);
+				else
+					_putchar(' ');
 			}
 		}
 		_putchar('\n');
