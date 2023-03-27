@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - print the last n of string
+ * puts_half - print the last n of string
  *
  * @str: string parameter input
  *
