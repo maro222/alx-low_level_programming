@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strcpy - print n elements of string
+ * _strcpy - copy strings
  *
- * @src: string parameter input
- * @dest: number of elements
+ * @src: string parameter input source
+ * @dest: copy of string destination
  *
- * Return: nothing
+ * Return: copy of string
 */
 
 char *_strcpy(char *dest, char *src)
@@ -17,6 +17,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-
+	dest[i] = '\0';
 	return (dest);
 }
