@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet -  decodes t0 1337
+ * leet - decodes to 1337
  *
  * @c: source string
  *
@@ -25,3 +25,4 @@ char *leet(char *c)
 		c++;
 	}
 	return (ptr);
+}
