@@ -11,6 +11,7 @@
 char *cap_string(char *str)
 {
 	int i;
+	char *ptr = str;
 	char del[] = " \t\n,.!?\"(){}";
 
 	if (str[0] == '\0')
@@ -27,5 +28,5 @@ char *cap_string(char *str)
 				}
 		}
 	}
-	return (str);
+	return (ptr);
 }

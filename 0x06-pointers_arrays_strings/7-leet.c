@@ -13,6 +13,7 @@ char *leet(char *c)
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	char value[] = {4, 3, 0, 7, 1};
 	int i, j;
+	char *ptr = c;
 
 	j = 0;
 
@@ -25,4 +26,4 @@ char *leet(char *c)
 		}
 		j++;
 	}
-	return (c);
+	return (ptr);
