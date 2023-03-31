@@ -12,18 +12,15 @@ char *leet(char *c)
 {
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	char value[] = {4, 3, 0, 7, 1};
-	int i, j;
-	char *ptr = c;
+	int i;
+	char *ptr =c;
 
-	j = 0;
-
-	while (c[j])
+	while (*c)
 	{
 		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if (c[j] == key[i] || c[j] == key[i] + 32)
-				c[j] = 48 + value[i];
+			if (*c == key[i] || *c == key[i] + 32)
+				*c = 48 + value[i];
 		}
-		j++;
 	}
 	return (ptr);
