@@ -5,6 +5,7 @@
  * @n: input
  * Return: int
  */
+int square(int n, int i);
 int _sqrt_recursion(int n)
 {
 	return (square(n, 1));
