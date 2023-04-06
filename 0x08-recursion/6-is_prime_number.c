@@ -8,7 +8,7 @@
 int prime(int n, int i);
 int is_prime_number(int n)
 {
-	prime(n, 1);
+	prime(n, 2);
 }
 
 /**
@@ -19,7 +19,9 @@ int is_prime_number(int n)
  */
 int prime(int n, int i)
 {
-	if (n % i == 0)
+	if (i >= n && i > 1)
+		return (1);
+	else if (n % i == 0 && n <= 1)
 		return (0);
 	else
 		return (prime(n, i + 1));
