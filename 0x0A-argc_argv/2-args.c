@@ -2,17 +2,17 @@
 
 /**
  * main - print name's program
- * @args: input
+ * @argc: input
  * @argv: input
  * Return: return integer
  *
- * */
+ */
 
-int main (int args,char const *argv[])
+int main(int argc, char const *argv[])
 {
 	int i;
-	
-	for (i = 0; i < argc; i++) 
-		printf("%s\n",argv[i]);
+
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 	return (0);
 }

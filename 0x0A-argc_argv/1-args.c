@@ -2,15 +2,15 @@
 
 /**
  * main - print name's program
- * @args: input
+ * @argc: input
  * @argv: input
  * Return: return integer
  *
- * */
+ */
 
-int main (int args,char const *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argv;
-	printf("%d\n",argc - 1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
