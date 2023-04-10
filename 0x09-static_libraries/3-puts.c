@@ -1,18 +1,3 @@
-#include "main.h"
-
-/**
- * _puts - swap between 2 pointers
- *
- * @str: string parameter input
- *
- * Return: nothing
- */
-
-void _puts(char *str)
+void _puts(char *s)
 {
-	int i;
-
-	for (i = 0; *(str + i) != '\0'; i++)
-		_putchar(*(str + i));
-	_putchar('\n');
 }
