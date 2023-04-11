@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		mul = (int)argv[1] * (int)argv[2];
+		mul = (int)(argv[1] - 48) * (int)(argv[2] - 48);
 		printf("%d\n", mul);
 	}
 	else
