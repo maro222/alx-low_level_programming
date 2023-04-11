@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib>
 
 /**
  * main - multiply 2 arguments
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		if (argv[i] >= 48 || argv[i] <= 57)
 		{
-			add = add + (int)argv[i];
+			add = add + atoi(argv[i]);
 		}
 		else
 		{
