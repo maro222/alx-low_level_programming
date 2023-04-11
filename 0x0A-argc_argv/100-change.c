@@ -17,8 +17,11 @@ int main(int argc, char *argv[])
 		int arr[] = {25, 10, 5, 2, 1};
 
 		if (money < 0)
-			return (printf("0\n"), 0);
-		for (i = 0, i < 5; i++)
+		{
+			printf("0\n");
+			return (0);
+		}
+		for (i = 0; i < 5; i++)
 		{
 			if (money >= arr[i])
 			{
