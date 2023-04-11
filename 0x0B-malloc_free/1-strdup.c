@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	if (ch == NULL || sizeof(str) == 0)
 		return (NULL);
 
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < sizeof(str); i++)
 		ch[i] = str[i];
