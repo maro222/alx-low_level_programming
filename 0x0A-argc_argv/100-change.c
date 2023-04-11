@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 			if (money >= arr[i])
 			{
 				coins += money / arr[i];
-				money %= arr[i];
+				money = money % arr[i];
 				if (money % arr[i] == 0)
 					break;
 			}
