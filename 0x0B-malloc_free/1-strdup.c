@@ -13,9 +13,9 @@ char *_strdup(char *str)
 	if (ch == NULL || sizeof(str) == 0)
 		return (NULL);
 
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; i < sizeof(str); i++)
+	for (; i < sizeof(str); i++)
 		ch[i] = str[i];
 	ch[++i] = '\0';
 	return (ch);
