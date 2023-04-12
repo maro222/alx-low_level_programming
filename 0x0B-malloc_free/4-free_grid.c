@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * alloc_grid - allocate an array of specific siz
+ * free_grid- allocate an array of specific siz
  * @height: string
  * Return: pointer success , Null fails
  */
