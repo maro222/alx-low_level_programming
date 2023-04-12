@@ -8,7 +8,7 @@
 
 char *_strdup(char *str)
 {
-	int size, i = 0;
+	int size = 0, i = 0;
 	char *ch;
 
 	if (str == NULL)
@@ -21,10 +21,7 @@ char *_strdup(char *str)
 
 	if (m == NULL)
 		return (NULL);
-	else
-	{
-		for (; i < size; i++)
-			ch[i] = str[i];
-	}
+	for (; i < size; i++)
+		ch[i] = str[i];
 	return (ch);
 }
