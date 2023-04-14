@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_calloc - check malloc for reservation space
- * @nmemb: input
- * @size: input
+ * *array_range - check malloc for reservation space
+ * @min: input
+ * @max: input
  * Return: address success, terminates fails
  *
  */
