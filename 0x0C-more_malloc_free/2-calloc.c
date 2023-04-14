@@ -23,6 +23,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = str;
 
 	for (i = 0; i < n; i++)
-		str[i++] = '0';
+		str[i] = '0';
 	return (ptr);
 }
