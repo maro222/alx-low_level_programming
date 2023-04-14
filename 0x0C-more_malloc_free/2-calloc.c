@@ -20,9 +20,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (str == NULL)
 		return (NULL);
 	n = size * nmemb;
-	ptr = str;
 
 	for (i = 0; i < n; i++)
 		str[i] = '0';
-	return (ptr);
+	return (str);
 }
