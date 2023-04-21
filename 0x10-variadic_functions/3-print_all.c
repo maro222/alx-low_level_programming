@@ -3,7 +3,8 @@
 /**
  * print_all - prints a
  * @format: list
- * return: nothing
+ * @...: input
+ * Return: nothing
  */
 
 void print_all(const char * const format, ...)
@@ -28,7 +29,7 @@ void print_all(const char * const format, ...)
 					printf("%s%i", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(list, int));
+					printf("%s%f", sep, va_arg(list, float));
 					break;
 				case 's':
 					str = va_arg(list, char *);
