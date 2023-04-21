@@ -2,8 +2,9 @@
 
 /**
  * print_numbers - print numbers
- * @seperator: string input
+ * @separator: string input
  * @n: integer input
+ * @...: variable input
  * Return: nothing
  */
 
@@ -21,8 +22,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(list, n);
 	for (i = 0; i < n; i++)
 		if (separator == NULL)
-			printf("%d%s ",va_arg(list, int), *separator);
+			printf("%d%s ", va_arg(list, int), *separator);
 		else
-			printf("%d ",va_arg(list, int));
+			printf("%d ", va_arg(list, int));
 	printf("\n");
 }

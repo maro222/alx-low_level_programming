@@ -3,6 +3,7 @@
 /**
  * sum_them_all - varaidic funcion that sum the parameters
  * @n: input
+ * @...: input variable
  * Return: sum of parameters
  */
 
