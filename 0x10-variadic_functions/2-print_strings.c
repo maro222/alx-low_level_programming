@@ -8,25 +8,20 @@
  * Return: nothing
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
+	int i = n;
+	char *str;
 	va_list list;
 
-	if (n == 0)
+	if (!n)
 	{
 		printf("\n");
 		return (0);
 	}
-
 	va_start(list, n);
-	for (i = 0; i < n; i++)
-	{
-		printf("%d", va_arg(list, int));
-		if (i != (n - 1) && separator != NULL)
-			printf("%s", separator);
-	}
-
-	printf("\n");
+	while (i--)
+		printf("%s%s", (str = va_arg(list, char *)) ? str : "(nil)",
+			i ? (separator ? separator : "") : "\n");
 	va_end(list);
 }
