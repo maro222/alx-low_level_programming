@@ -1,4 +1,4 @@
-#include "varaidic_functions.h"
+#include "varidic_functions.h"
 
 /**
  * sum_them_all - varaidic funcion that sum the parameters
