@@ -26,12 +26,11 @@ int strlen(char *str)
 size_t print_list(const list_t *h)
 {
 	size_t cnt = 0;
-	struct list_s *ptr = h;
 
-	while (ptr !=  NULL)
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", strlen(ptr->str), ptr->str ? ptr->str : "(nil)");
-		ptr = ptr->next;
+		printf("[%d] %s\n", strlen(h->str), h->str ? h->str : "(nil)");
+		h = h->next;
 		cnt++;
 	}
 	return (cnt);
