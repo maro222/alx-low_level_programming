@@ -11,7 +11,7 @@ int strlen(char *str)
 {
 	int cnt = 0;
 
-	while (str++)
+	while (str[cnt])
 		cnt++;
 	return (cnt);
 }
@@ -25,11 +25,14 @@ int strlen(char *str)
 
 size_t print_list(const list_t *h)
 {
-	size_t cnt = 0;
+	int cnt = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		printf("[%d] %s\n", strlen(h->str), h->str ? h->str : "(nil)");
+		if (h->str != NULL)
+			printf("[%u] %s\n", strlen(h->str), h->str);
+		else
+			print([0] "(nil)\n");
 		h = h->next;
 		cnt++;
 	}
