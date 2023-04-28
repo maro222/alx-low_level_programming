@@ -11,7 +11,7 @@ main proc
    mov dx,offset myvar
    lea dx,myvar
 
-   mov ah,9
+   mov ah,20
    int 21h
 main endp
 
