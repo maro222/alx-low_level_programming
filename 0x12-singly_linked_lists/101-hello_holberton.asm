@@ -2,7 +2,7 @@ org 100h
 
 .model small
 .data
-	myvar db "Hello, Holberton$"
+	myvar db "Hello, Holberton\n$"
 .code
 main proc
    mov ax,@data
