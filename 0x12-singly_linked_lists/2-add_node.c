@@ -5,13 +5,15 @@
  * @head: head
  * @str: string
  * Return: nothing
- *
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *node;
-	int len = strlen(str);
+	unsigned int len = 0;
+
+	while (str[len])
+		len++;
 
 	list_t node = malloc(sizeof(list_t));
 
@@ -30,5 +32,5 @@ list_t *add_node(list_t **head, const char *str)
 	node->len = len;
 	node->next = *head;
 	*head = node;
-	return (node);
+	return (*head);
 }
