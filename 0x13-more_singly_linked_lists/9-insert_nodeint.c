@@ -25,7 +25,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (cnt == idx)
 		{
 			node->next = ptr;
-			temp->next = node;
+			if (cnt == 0)
+				*head = node;
+			else
+				temp->next = node;
 			return (node);
 		}
 		cnt++;
