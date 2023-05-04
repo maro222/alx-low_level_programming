@@ -23,13 +23,13 @@ unsigned int binary_to_uint(const char *b)
 
 	while (*b)
 	{
-		if (*b == 1)
+		if (*b == '1')
 		{
 			sum += ((*b - '0') * (1  << (i));
 			i--;
 			b++;
 		}
-		else if (*b == 0)
+		else if (*b == '0')
 		{
 			sum += 0;
 			i--;
