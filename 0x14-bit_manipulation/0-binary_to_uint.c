@@ -13,6 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0;
 	unsigned int sum = 0;
 
+	if (!b)
+		return (0);
+
 	while (*ptr)
 	{
 		i++;
