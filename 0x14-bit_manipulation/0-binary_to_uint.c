@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (*b == 1)
 		{
-			sum += (*b << (i));
+			sum += ((*b - '0') << (i));
 			i--;
 			b++;
 		}
