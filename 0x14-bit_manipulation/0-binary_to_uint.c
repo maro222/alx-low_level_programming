@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0;
 	unsigned int sum = 0;
 
-	while (ptr)
+	while (*ptr)
 	{
 		i++;
 		ptr++;
@@ -21,11 +21,11 @@ unsigned int binary_to_uint(const char *b)
 
 	i--;
 
-	while (b)
+	while (*b)
 	{
 		if (*b == 1)
 		{
-			sum += ((*b - '0') << (i));
+			sum += ((*b - '0') * (1  << (i));
 			i--;
 			b++;
 		}
