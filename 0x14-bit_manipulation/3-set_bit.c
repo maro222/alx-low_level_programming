@@ -3,7 +3,7 @@
 /**
  *set_bit -set
  *@n: kk
- @index: ind
+ *@index: ind
  *Return: iii
  */
 int set_bit(unsigned long int *n, unsigned int index)
