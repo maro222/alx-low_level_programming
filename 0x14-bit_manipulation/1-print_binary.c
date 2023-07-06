@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		printf("%d", 0);
+		printf("%u", 0);
 		return;
 	}
 
@@ -24,12 +24,12 @@ void print_binary(unsigned long int n)
 	{
 		if (n != 0)
 			print_binary(n);
-		printf("%d", 0);
+		printf("%u", 0);
 	}
 	else
 	{
 		if (n != 0)
 			print_binary(n);
-		printf("%d", 1);
+		printf("%u", 1);
 	}
 }
