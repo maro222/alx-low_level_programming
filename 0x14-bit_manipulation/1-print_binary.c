@@ -10,7 +10,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int temp;
+	unsigned long int temp;
 
 	if (n == 0)
 	{
