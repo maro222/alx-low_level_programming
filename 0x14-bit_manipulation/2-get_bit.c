@@ -20,6 +20,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		size++;
 	}
 	size--;
+	index = size - index;
 
 	if (size < index)
 		return (-1);
