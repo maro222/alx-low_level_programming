@@ -41,4 +41,5 @@ int get_bit(unsigned long int n, unsigned int index)
 		n /= 2;
 		size--;
 	}
+	return (-1);
 }
