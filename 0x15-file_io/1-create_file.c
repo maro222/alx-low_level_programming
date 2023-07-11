@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 	if (cr < 0)
 		return (-1);
 
-	fd = open(filename, O_RDWR | O_TRUNC | O_CREAT | O_EXCL);
+	fd = open(filename, O_RDWR | O_TRUNC | O_EXCL);
 	if (fd < 0)
 		return (-1);
 
