@@ -11,13 +11,17 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, letters, wr;
+	int cr, fd, letters, wr;
 	char *temp;
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
+	cr = creat(filename, S_IRUSR | S_IWUSR);
+	if (cr < 0)
+		return (-1);
+
+	fd = open(filename, O_RDWR | O_TRUNC);
 	if (fd < 0)
 		return (-1);
 
