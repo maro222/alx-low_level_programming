@@ -24,10 +24,14 @@ int create_file(const char *filename, char *text_content)
 	if (fd < 0)
 		return (-1);
 
-	if (text_content != NULL)
-		letters = sizeof(text_content) / sizeof(text_content[0]);
-	else
-		letters = 0;
+	letters = 0;
+	temp = text_content;
+	while (temp)
+	{
+		letters++;
+		temp = temp + 1;
+	}
+
 	wr = write(fd, text_content, letters);
 	if (wr < 0)
 		return (-1);
