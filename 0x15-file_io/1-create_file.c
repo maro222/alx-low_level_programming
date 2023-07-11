@@ -16,11 +16,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	cr = creat(filename, S_IRUSR | S_IWUSR);
-	if (cr < 0)
-		return (-1);
-
-	fd = open(filename, O_WRONLY | O_TRUNC);
+	fd = open(filename, O_WRONLY | O_TRUNC | 0_CREAT, S_IRUSR | S_IWUSR);
 	if (fd < 0)
 		return (-1);
 
