@@ -28,7 +28,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (temp)
 	{
 		free(temp->value);
-		strcpy(temp->value, value);
+		temp->value = strdup(value);
 		return (1);
 	}
 
@@ -37,8 +37,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!item)
 		return (0);
 
-	strcpy(item->key, key);
-	strcpy(item->value, value);
+	item->key = strdup(key);
+	item->value = strdup(value);
 
 	item->next = ht->array[idx];
 	ht->array[idx] = item;
