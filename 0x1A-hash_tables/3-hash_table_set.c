@@ -13,7 +13,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int long idx;
-	hash_node_s *item, temp;
+	hash_node_t *item, *temp;
 
 	if (!ht || !key || !(*key) || !value)
 		return (0);
@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 
-	item = malloc(sizeof(hash_node_s));
+	item = malloc(sizeof(hash_node_t));
 	if (!item)
 		return (0);
 
