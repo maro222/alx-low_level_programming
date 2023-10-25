@@ -2,7 +2,7 @@
 """Module for technical interview """
 
 
-def islandPerimeter(self, grid: List[List[int]]) -> int:
+def islandPerimeter(grid):
     """ function def island_perimeter(grid):
     that returns the perimeter of the island described in grid
     leetcode 463 island perimeter"""
