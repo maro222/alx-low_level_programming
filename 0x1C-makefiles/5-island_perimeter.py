@@ -2,9 +2,8 @@
 """Module for technical interview """
 
 
-def islandPerimeter(grid):
-    """ function def island_perimeter(grid):
-    that returns the perimeter of the island described in grid
+def island_perimeter(grid):
+    """that returns the perimeter of the island described in grid
     leetcode 463 island perimeter"""
     sum = 0
     for i in range(len(grid)):
